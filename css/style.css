@@ -76,6 +76,7 @@ nav{
 section{
     padding: 70px 0 70px 40px;
     overflow: auto;
+    display: flex;
 }
 
 /* impostazioni footer */
