@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+:root{
+    --header-color:rgb(9,11,18); --main-color:rgb(20,25,34);
+    --footer-color:rgb(40,40,40);
+}
+
 body{
     font-family: 'Montserrat', sans-serif;
 }
@@ -12,3 +17,5 @@ body{
     max-width: 1200px;
     margin: 0 auto;
 }
+
+/** NON GESTITE LA RISOLUZIONE SOTTO I 500px. */
