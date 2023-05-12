@@ -56,7 +56,6 @@ header{
 /* impostazioni main */
 nav{
     height: 100%;
-    width: 40px;
     background-color: black;
     position: fixed;
     left: 0;
@@ -67,12 +66,16 @@ nav{
     z-index: 2;
     padding-bottom: 70px;
 }
- .full-nav{ /** appare da 639px in su */
+.dry-nav{
+    width: 40px;
+}
+.full-nav{ /** appare da 639px in su */
     display: none; 
 }
 
 section{
     padding: 70px 0 70px 40px;
+    overflow: auto;
 }
 
 /* impostazioni footer */
@@ -117,7 +120,7 @@ footer > div{
     .full-nav{
         display: flex;
     }
-    .section{
-        padding-left: 180px;
+    section{
+        padding: 70px 0 70px 180px;
     }
 }
