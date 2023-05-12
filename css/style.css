@@ -29,12 +29,27 @@ body{
 
 /** NON GESTITE LA RISOLUZIONE SOTTO I 500px. */
 
+/* impostazioni main */
+main{
+    background-color: var(--main-color);
+    height: 100%;
+}
+.main-content{
+    
+}
+
+
+
+
+
+
+
 /* impostazioni footer */
 footer{
     width: 100%;
     height: 70px;
     background-color: var(--footer-color);
-    position: fixed;
+    position: sticky;
     bottom: 0;
     left: 0;
     z-index: 1;
