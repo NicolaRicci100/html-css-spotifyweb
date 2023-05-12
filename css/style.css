@@ -28,28 +28,37 @@ body{
 }
 
 /** NON GESTITE LA RISOLUZIONE SOTTO I 500px. */
-
-/* impostazioni main */
-main{
+body{
     background-color: var(--main-color);
-    height: 100%;
 }
-.main-content{
+/* impostazioni header */
+header{
+    width: 100%; 
+    height: 70px;
+    background-color: rgba(9,11,18, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     
 }
 
 
 
-
-
-
+/* impostazioni main */
+main{
+    background-color: var(--main-color);
+}
 
 /* impostazioni footer */
 footer{
     width: 100%;
     height: 70px;
     background-color: var(--footer-color);
-    position: sticky;
+    position: fixed;
     bottom: 0;
     left: 0;
     z-index: 1;
