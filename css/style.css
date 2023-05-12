@@ -27,7 +27,7 @@ body{
     color: white;
 }
 
-/** NON GESTITE LA RISOLUZIONE SOTTO I 500px. */
+
 body{
     background-color: var(--main-color);
 }
@@ -42,15 +42,22 @@ header{
     z-index: 1;
     display: flex;
     justify-content: flex-end;
-    align-items: center;
-    
+    align-items: center; 
 }
 
-
-
 /* impostazioni main */
-main{
-    background-color: var(--main-color);
+nav{
+    height: 100%;
+    width: 40px;
+    background-color: black;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 2;
+    padding-bottom: 70px;
 }
 
 /* impostazioni footer */
@@ -61,7 +68,7 @@ footer{
     position: fixed;
     bottom: 0;
     left: 0;
-    z-index: 1;
+    z-index: 3;
     display: flex;
     justify-content: space-between;
 }
@@ -78,4 +85,15 @@ footer > div{
     flex-grow: 2;
     flex-direction: column;
     justify-content: space-evenly;
+}
+
+
+
+
+/** NON GESTITE LA RISOLUZIONE SOTTO I 500px. */
+
+@media screen and (min-width: 639px) {
+    nav{
+        width: 180px;
+    }
 }
