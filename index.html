@@ -10,42 +10,49 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header class="border">
+        <header>
             <a href="#" class="upgrade">EFFETTUA L'UPGRADE</a>
         </header>
         <main>
-            <nav class="dry-nav border">
-                <div>
-                    <div>LOGO</div>
-                    <a href="#">icona</a>
-                    <a href="#">icona</a>
-                    <a href="#">icona</a>
+            <nav class="dry-nav">
+                <div class="internal-nav">
+                    <div class="logo">
+                        <img src="img/logo-small.svg" alt="logo Spotify">
+                    </div>
+                    <i class="fa-solid fa-house"></i>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-lines-leaning"></i>
                 </div>
-                <div>
-                    <a href="#">icona</a>
-                    <a href="#">profilo</a>
+                <div class="internal-nav">
+                    <i class="fa-regular fa-circle-down"></i>
+                    <i class="fa-solid fa-user"></i>
                 </div>
             </nav>
-            <nav class="full-nav border">
-                <div>
-                    <div>LOGO più lungo</div>
-                    <a href="#">icona con testo</a>
-                    <a href="#">icona con testo</a>
-                    <a href="#">icona con testo</a>
+            <nav class="full-nav"> <!-- appare da 639px in su -->
+                <div class="internal-nav">
+                    <div class="logo">
+                        <img src="img/logo.svg" alt="logo Spotify">
+                    </div>
+                    <a href="#"><i class="fa-solid fa-house"></i> Home</a>
+                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i> Cerca</a>
+                    <a href="#"><i class="fa-solid fa-lines-leaning"></i> La tua libreria</a>
                     <h3>PLAYLIST</h3>
-                    <a href="#">icona e crea playlist</a>
-                    <a href="#">nuova playlist</a>
-                    <a href="#">nuova playlist</a>
-                    <a href="#">nuova playlist</a>
-                    <a href="#">nuova playlist</a>
-                    <a href="#">nuova playlist</a>
-                    <a href="#">nuova playlist</a>
-                    <a href="#">nuova playlist</a>
+                    <a class="flex center" href="#">
+                        <i class="fa-solid fa-square-plus"></i>
+                        <span>Crea Playlist</span>
+                    </a>
+                    <a href="#">Nome Playlist</a>
+                    <a href="#">Nome Playlist</a>
+                    <a href="#">Nome Playlist</a>
+                    <a href="#">Nome Playlist</a>
+                    <a href="#">Nome Playlist</a>
+                    <a href="#">Nome Playlist</a>
+                    <a href="#">Nome Playlist</a>
                 </div>
                 <div>
-                    <a href="#">icona e testo</a>
-                    <div>linea</div>
-                    <a href="#">profilo e nome</a>
+                    <a href="#"><i class="fa-regular fa-circle-down"></i> Installa app</a>
+                    <hr>
+                    <a href="#"><i class="fa-solid fa-user"></i> John Doe</a>
                 </div>
             </nav>
             <section class="border">
@@ -70,7 +77,7 @@
         <footer>
             <div class="flex left-con">
                 <div class="flex center">
-                    <div>
+                    <div class="song">
                         <img src="img/sinister.jpeg" alt="brano in riproduzione">
                     </div>
                     <div>
