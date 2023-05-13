@@ -21,11 +21,24 @@ body{
 .flex{
     display: flex;
 }
-
+.column{
+    flex-direction: column;
+}
+.center{
+    align-items: center;
+}
 a{
     display: block;
     text-decoration: none;
     color: white;
+}
+img{
+    object-fit: cover;
+    width: 50px;
+}
+p{
+    font-size: 10px;
+    color: rgb(110,110,110);
 }
 
 
@@ -84,27 +97,64 @@ footer{
     width: 100%;
     height: 70px;
     background-color: var(--footer-color);
+    color: white;
     position: fixed;
     bottom: 0;
     left: 0;
     z-index: 3;
     display: flex;
     justify-content: space-between;
+    padding: 0 10px 0;
+    gap: 10px;
 }
 footer > div{
     align-items: center;
+    flex-basis: calc(100% / 3);
 }
-.left-con, .right-con{
+/* .left-con, .right-con{
     flex-grow: 1;
-}
+} */
 .right-con{
     justify-content: flex-end;
 }
+.left-con{
+    justify-content: space-between;
+}
 .controls{
-    flex-grow: 2;
     flex-direction: column;
     justify-content: space-evenly;
 }
+.controls div:first-child{
+    gap: 15px;
+    align-items: center;
+}
+.fa-circle-play{
+    padding: 0 10px 0;
+    font-size: 30px;
+    align-items: center;
+}
+.progression-bar{
+    height: 3px;
+    width: 100px;
+    border-radius: 20px;
+    background-color: rgb(90,90,90);
+    align-items: center;
+}
+.audio{
+    align-items: baseline;
+}
+footer img{
+    padding-right: 10px;
+}
+
+.just{
+    padding: 0 20px 0;
+    gap: 5px;
+    font-size: 15px;
+    color: rgb(110,110,110);
+    justify-self: flex-end;
+}
+
 
 
 
