@@ -16,8 +16,9 @@ body{
 .container{
     max-width: 1200px;
     margin: 0 auto;
+    padding: 20px;
+    color: white; /*per alcuni testi di main */
 }
-
 .flex{
     display: flex;
 }
@@ -43,12 +44,14 @@ hr{
     margin:10px 20px 10px 0;
     border-color: gray;
 }
+ul{
+    list-style-type: none;
+}
 
 
-/* TODO classe debug per colorare bordi e alcuni testi */
+/* TODO classe debug per colorare bordi */
 .border{       
     border: 2px dashed white;
-    color: white;
 }
 
 
@@ -135,6 +138,46 @@ section{
     padding: 70px 0 70px 40px;
     overflow: auto;
     display: flex;
+}
+section p{
+    font-weight: 600;
+    padding-top: 5px;
+}
+section h3{
+    padding: 15px 0 10px;
+}
+section ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 10px 0;
+    font-size: 12px;
+    font-weight: 600;
+}
+section ul li{
+    flex-basis: calc(100% / 4);
+    text-align: center;
+    height: 40px;
+    color: rgb(128,128,128);
+}
+.music{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.piece{
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.music img{
+    width: 100%;
+    padding: 10px;
+}
+.circle{
+    border-radius: 50%;
 }
 
 /* impostazioni footer */
@@ -233,10 +276,24 @@ footer img{
     section{
         padding: 70px 0 70px 180px;
     }
+    section ul li{
+        flex-basis: calc(100% / 3);
+    }
     nav i{
         padding-right: 5px;
     }
     nav i:hover{
         color: white;
+    }
+}
+@media screen and (min-width: 878px){
+    section ul li{
+        flex-basis: calc(100% / 5);
+    }
+}
+@media screen and (min-width: 1440px){
+    
+    section ul li{
+        flex-basis: calc(100% / 6);
     }
 }
