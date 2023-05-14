@@ -248,6 +248,7 @@ footer img{
 }
 .just{
     gap: 5px;
+    padding: 0 15px 0;
     font-size: 15px;
     color: rgb(110,110,110);
     flex-direction: column;
