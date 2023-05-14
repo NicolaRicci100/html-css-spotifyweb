@@ -290,10 +290,16 @@ footer img{
     section ul li{
         flex-basis: calc(100% / 5);
     }
+    .music .piece{
+        flex-basis: calc(100% / 4);
+    }
 }
 @media screen and (min-width: 1440px){
     
     section ul li{
+        flex-basis: calc(100% / 6);
+    }
+    .music .piece{
         flex-basis: calc(100% / 6);
     }
 }
