@@ -179,6 +179,19 @@ section ul li{
 .circle{
     border-radius: 50%;
 }
+.cover{
+    position: relative;
+}
+.download{
+    max-width: 50%;
+    position: absolute;
+    top: 25%;
+    left: 22.5%;
+    display: none;
+}
+.cover:hover .download{
+    display: block;
+}
 
 /* impostazioni footer */
 footer{
