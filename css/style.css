@@ -74,7 +74,7 @@ header{
 .upgrade{
     border: 1px solid white;
     border-radius: 20px;
-    margin: 5px;
+    margin: 20px;
     padding: 10px 35px;
     font-weight: 700;
     font-size: 10px;
@@ -254,21 +254,44 @@ footer span{
     font-size: 30px;
     align-items: center;
 }
+.audio{
+    align-items: baseline;
+}
 .progression-bar{
     height: 3px;
-    width: 100px;
+    width: 20vw;
     border-radius: 20px;
     background-color: rgb(90,90,90);
     align-items: center;
 }
-.progression-bar:hover{
-    background-color: white;
+.hover-bar{
+    background-color: rgb(193,193,193);
+    height: 100%;
+    width: 35%;
+    position: relative;
+    display: none;
+}
+.marker{
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+    background-color: rgb(193,193,193);
+    border: 1px solid greenyellow;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(50%,-50%);
+    display: none;
+}
+.progression-bar:hover .hover-bar{
+    display: block;
+}
+.progression-bar:hover .marker{
+    cursor: pointer;
+    display: block;
 }
 .right-con .progression-bar{
-    width: 80px;
-}
-.audio{
-    align-items: baseline;
+    width: 70px;
 }
 footer img{
     padding-right: 10px;
