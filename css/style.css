@@ -135,9 +135,6 @@ nav a:hover{
 }
 
 /* impostazioni sezione interna main */
-main{
-    
-}
 section{
     /* padding: 70px 0 70px 40px; */
     display: flex;
@@ -176,6 +173,7 @@ section ul li:hover{
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+    padding-bottom: 10px;
 }
 .piece{
     flex-basis: 50%;
