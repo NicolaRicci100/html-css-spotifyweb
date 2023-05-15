@@ -303,6 +303,9 @@ footer img{
     color: rgb(110,110,110);
     flex-direction: column;
 }
+.just i{
+    padding: 0 5px;
+}
 .song img{
     object-fit: cover;
     width: 50px;
@@ -312,7 +315,7 @@ footer img{
 
 
 
-/** NON GESTITE LA RISOLUZIONE SOTTO I 500px. */
+/** partenza di riferimento 552px */
 
 @media screen and (min-width: 639px) {
     header{
