@@ -136,7 +136,6 @@ nav a:hover{
 /* impostazioni sezione interna main */
 section{
     padding: 70px 0 70px 40px;
-    overflow: auto;
     display: flex;
 }
 section p{
@@ -159,6 +158,11 @@ section ul li{
     text-align: center;
     height: 40px;
     color: rgb(128,128,128);
+}
+section ul li:hover{
+    text-decoration: underline;
+    text-decoration-color: greenyellow;
+    cursor: pointer;
 }
 .music{
     display: flex;
@@ -191,6 +195,10 @@ section ul li{
 }
 .cover:hover .download{
     display: block;
+    cursor: pointer;
+}
+.cover:hover > img{
+    opacity: 0.5;
 }
 
 /* impostazioni footer */
