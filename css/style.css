@@ -60,16 +60,16 @@ body{
 }
 /* impostazioni header */
 header{
-    width: 100%; 
+    width: calc(100% - 37px) ;
     height: 70px;
     background-color: rgba(9,11,18, 0.5);
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
     z-index: 1;
     display: flex;
     justify-content: flex-end;
-    align-items: center; 
+    align-items: center;
 }
 .upgrade{
     border: 1px solid white;
@@ -111,11 +111,11 @@ nav a:hover{
 }
 .dry-nav{
     width: 40px;
-    padding: 5px 0 75px;
+    padding: 5px 0 5px;
 }
 .full-nav{ /** appare da 639px in su */
     display: none;
-    padding: 20px 0 85px 20px;
+    padding: 15px 0 5px 15px;
 }
 .fa-square-plus{
     font-size: xx-large;
@@ -144,6 +144,7 @@ section{
     overflow: auto;
     height: calc(100vh - 70px);
     width: 100%;
+    padding-top: 70px;
 }
 section p{
     font-weight: 600;
@@ -293,6 +294,9 @@ footer img{
 /** NON GESTITE LA RISOLUZIONE SOTTO I 500px. */
 
 @media screen and (min-width: 639px) {
+    header{
+        width: calc(100% - 147px);
+    }
     nav{
         width: 180px;
     }
