@@ -5,7 +5,8 @@
 }
 
 :root{
-    --header-color:rgb(9,11,18); --main-color:rgb(20,25,34);
+    --header-color:rgb(9,11,18); 
+    --main-color:rgb(20,25,34);
     --footer-color:rgb(40,40,40);
 }
 
@@ -46,12 +47,6 @@ hr{
 }
 ul{
     list-style-type: none;
-}
-
-
-/* TODO classe debug per colorare bordi */
-.border{       
-    border: 2px dashed white;
 }
 
 
@@ -127,6 +122,7 @@ nav a:hover{
 .dry-nav .internal-nav{
     align-items: center;
 }
+
 
 /* impostazioni sezione interna main */
 section{
